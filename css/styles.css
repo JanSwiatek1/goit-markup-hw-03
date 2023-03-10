@@ -13,14 +13,13 @@ body{
 
 
 
-.header{
-    background-color: #fff;
-    height: 80px;
-    margin-bottom: 0px;
-    border: 1px solid #ECECEC;    
-}
+
 .container{
     width: 1200px;
+    margin: 0 auto;
+}
+
+header .container{
     margin: 0 auto;
 }
 
@@ -30,6 +29,8 @@ body{
     list-style-type: none;
     align-items: center;
     height: 80px;
+    border: 1px solid #ECECEC;   
+    background-color: #fff;
 }
 
 .footer{
@@ -60,12 +61,18 @@ body{
     margin-left: 0px;
     margin-top: 0px;
     background-color: #2F303A;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .headline_content{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+
 }
 
 .content_portfolio{
@@ -92,13 +99,11 @@ body{
 }
 
 
-.pictures-staff{
+.pictures_staff{
 background-color:var(--background-color);
 height: 648px;
 margin-left: 0px;
 margin-top: 149px;
-padding-top: 94px;
-padding-bottom: 94px;
 
 
 }
@@ -194,7 +199,7 @@ padding-bottom: 94px;
 
 .headline_h1 {
     color:#FFFFFF;
-    text-align:center;
+    align-items: center;
     line-height: 2;
     font-weight: 900;
     font-size: 44px;
@@ -202,6 +207,7 @@ padding-bottom: 94px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     line-height: 60px;
+
 
 }
 
@@ -217,26 +223,23 @@ padding-bottom: 94px;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border-radius: 4px;
     gap: 46px;
+    padding: 0px;
+    margin:0;
 
 
 }
 
-.list_header2 {
+.list_header_tel {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     border-radius: 4px;
     gap: 50px;
 
-}
-
-.list_header li{
-    margin-right: 10px;
-    margin-top: 10px;
 }
 
 .list_main{
@@ -322,24 +325,45 @@ padding-bottom: 94px;
 
 
 .inf_picture{
-    background-color: #FFFFFF;
-    padding-top: 0.5px;
+    padding-top: 1px;
     height: 108px;
     text-align: center;
     align-items: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+
+   
+   
 }
+
+.inf_picture figcaption {
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
 .inf_picture_portfolio{
     background-color: #FFFFFF;
     padding: 20px 24px 20px 24px;
     padding-top: 1%;
 }
 
+.picture_box{
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+}
+.list_block figure:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .blue{
     color:var(--button-color);
 }
 
+.gray{
+    color: var(--link-clolor);
+}
 
 .footer_adress {
     display: flex;
@@ -352,3 +376,4 @@ padding-bottom: 94px;
     margin-top: 20px;
 
 }
+
