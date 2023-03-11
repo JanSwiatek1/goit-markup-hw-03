@@ -9,6 +9,7 @@
 body{
     font-family:'Roboto','Verdana', sans-serif;
     margin:0;
+    color: var(--text-color);
 }
 
 
@@ -101,9 +102,9 @@ background-color:var(--background-color);
 
 .section_portfolio{
     display: flex;
-    list-style-type: none;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 
 }
 
@@ -279,7 +280,13 @@ background-color:var(--background-color);
     letter-spacing: 0.03em;
     color: var(--link-clolor);
     margin: 0;
+    padding: 0;
+    
 
+}
+
+.list_main_text ul{
+    padding-inline-start: 0;
 }
 
 .list_main_text p {
@@ -307,6 +314,7 @@ background-color:var(--background-color);
     padding: 0;
     justify-content: space-between;
     align-items: center;
+    gap:30px;
 
 }
 
@@ -337,6 +345,12 @@ figure{
     background-color: #FFFFFF;
     padding: 20px 24px 20px 24px;
     padding-top: 1%;
+}
+
+.inf_picture_portfolio p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
 }
 
 .picture_box{
@@ -371,7 +385,7 @@ figure{
 
 }
 
-p{
+figcapition p{
     margin: 0;
     padding-bottom: 10px;
 }
